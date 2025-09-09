@@ -33,17 +33,27 @@ class OrganizeYoutubeMetrics:
                     #likes=int(row["likes_24h"])
                 )
                 self.metrics.append(metric)            
-        
+    
+
     def get_top_ranked(self, n=5):
-        top_viewed = sorted(self.metrics, key=lambda m: m.views, reverse=True)[:n]
-        top_ctr = sorted(self.metrics, key=lambda m: m.impression_ctr, reverse=True)[:n]
-        top_impression = sorted(self.metrics, key=lambda m: m.impressions, reverse=True)[:n]
-        top_watch_time =sorted(self.metrics, key=lambda m: m.watch_time, reverse=True)[:n]
+        top_ranked = []
+        top_viewed = self.metrics.get_top_viewed(5)
+        top_ctr = self.metrics.get_top_ctr(5)
+        for i in range(5):
+            if top_viewed[i].title == top_ctr[i].title :
+                top_ranked.append(top_viewed[i])
+        return top_ranked
 
-        for i in range(len(top_viewed) - 1):
-            if top_viewed[i].title == top_viewed[i+1].title:
-                print(i) 
-
-
-   
+    def get_top_viewed(self, n=5):
+        return sorted(self.metrics, key=lambda m: m.views, reverse=True)[:n]
+    
+    def get_top_ctr(self, n=5):
+        return sorted(self.metrics, key=lambda m: m.impression_ctr, reverse=True)[:n]
+    
+    def get_top_impression(self, n=5):
+        return sorted(self.metrics, key=lambda m: m.impressions, reverse=True)[:n]
+    
+    def get_top_watch_time(self, n=5):
+        return sorted(self.metrics, key=lambda m: m.watch_time, reverse=True)[:n]
+    
 
