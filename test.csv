@@ -1,0 +1,31 @@
+date,title,desc,tags,platform,views_24h,likes_24h,ctr,avg_view_dur_sec
+2025-07-01,Warzone FOV Myth Busted,"Testing if high FOV hurts aim",warzone;fov;youtubetips,youtube,8200,540,0.065,218
+2025-07-03,Windows 11 Game Mode Tweaks,"Easy toggles for more FPS",windows;fps;gamemode,blog,2900,120,0.000,0
+2025-07-05,RTX 3070 Undervolt Results,"Lower temps same frames",rtx3070;undervolt;msiafterburner,youtube,9100,600,0.072,246
+2025-07-07,Warzone Aim Routine 15 Minutes,"My daily warmup",warzone;aim;practice,tiktok,5600,480,0.000,0
+2025-07-10,OBS Recording Preset 2025,"Quality vs file size",obs;recording;bitrate,youtube,6800,430,0.058,232
+2025-07-12,NVIDIA DLSS Settings That Matter,"Sharpening and ghosting fix",dlss;upscaling;nvidia,youtube,11200,770,0.078,255
+2025-07-15,Top 5 Free Windows Utilities for Gamers,"Must have tools",windows;utilities;free,blog,3300,150,0.000,0
+2025-07-17,Warzone TTK Spreadsheet Explained,"How to read TTK tables",warzone;ttk;spreadsheet,youtube,7400,410,0.061,221
+2025-07-19,Best Mouse Sens for Warzone,"Converting from Fortnite sens",warzone;sensitivity;aim,tiktok,6200,510,0.000,0
+2025-07-21,Fix Stutter on NVIDIA 551 Drivers,"Clean install guide",nvidia;drivers;stutter,youtube,9800,690,0.074,240
+2025-07-24,Netduma QoS for Low Ping,"Smart queue setup",netduma;qos;lag,youtube,5300,300,0.052,210
+2025-07-26,Windows Debloat Safely in 2025,"What not to remove",windows;debloat;privacy,blog,3100,140,0.000,0
+2025-07-28,Warzone Audio Footsteps Fix,"EQ settings that help",warzone;audio;eq,youtube,7600,420,0.060,214
+2025-07-30,Quick Tip: Hidden NVIDIA Overlay,"Record instant replays",nvidia;overlay;shadowplay,tiktok,4800,390,0.000,0
+2025-08-02,Warzone Season Mid-Patch Notes,"What actually changed",warzone;patch;meta,youtube,15400,1100,0.091,262
+2025-08-04,How to Pick a Monitor for FPS,"Refresh rate vs response time",monitor;240hz;ips,blog,2800,130,0.000,0
+2025-08-06,DLSS 4 vs Native Aim Test,"Flick accuracy comparison",dlss4;aimlab;latency,youtube,13200,980,0.085,258
+2025-08-08,My 5 Recoil Control Drills,"Works on any AR",warzone;recoil;training,tiktok,7100,640,0.000,0
+2025-08-11,Fix Packet Burst in Warzone,"Router and in-game settings",warzone;packetburst;router,youtube,8900,650,0.073,236
+2025-08-14,Windows 11 Scheduler & E-cores,"Game bar per-app control",windows11;scheduler;intel,youtube,6400,370,0.056,225
+2025-08-17,OBS Color Settings for YouTube,"Accurate colors BT.709",obs;color;709,youtube,7200,460,0.060,233
+2025-08-19,Warzone Meta: SMG Ranking,"Close range truth",warzone;meta;smg,blog,3400,170,0.000,0
+2025-08-21,RTX 3070 Undervolt Update,"Summer temps test",rtx3070;undervolt;temps,tiktok,5900,520,0.000,0
+2025-08-24,Fix Screen Tearing Without V-Sync,"NVCP + in-game combo",tearing;g-sync;nvcp,youtube,8400,560,0.067,244
+2025-08-27,Warzone Movement Settings 2025,"Tactical sprint tips",warzone;movement;settings,youtube,9700,690,0.075,252
+2025-08-29,Low-Latency Streaming Setup,"Audio routing no echo",streaming;obs;voicemeeter,youtube,6600,380,0.055,228
+2025-09-01,Windows 11 24H2 Gaming Features,"Worth updating now?",windows11;24h2;gaming,blog,3600,180,0.000,0
+2025-09-02,Warzone Anti-Cheat Patch Live,"Hit reg feels different",warzone;anticheat;patch,youtube,16800,1250,0.095,268
+2025-09-03,Best Budget Mic for Streams,"$50 options tested",microphone;budget;streaming,tiktok,6500,540,0.000,0
+2025-09-04,NVIDIA Frame Gen Input Lag Check,"Reflex graphs inside",framegen;reflex;latency,youtube,11800,870,0.082,257
