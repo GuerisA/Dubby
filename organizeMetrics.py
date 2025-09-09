@@ -4,10 +4,14 @@ from dataclasses import dataclass
 @dataclass
 class YoutubeMetric:
     title: str
-    views_24h: int
-    #comments: int
-    likes: int
-    score = views_24h + (likes*2)
+    duration: str
+    views: str
+    watch_time: str
+    subscribers: str
+    impressions: str
+    impression_ctr: str
+    #likes: int
+    
 
 class OrganizeYoutubeMetrics:
     def __init__(self, filepath: str):
@@ -19,14 +23,27 @@ class OrganizeYoutubeMetrics:
             reader = csv.DictReader(f)
             for row in reader:
                 metric = YoutubeMetric(
-                    title=row["title"],
-                    views_24h=int(row["views_24h"]),
-                    #comments=int(row["comments"]),
-                    likes=int(row["likes_24h"])
+                    title=row["Video title"],
+                    views=row["Views"],
+                    duration= row["Duration"],
+                    watch_time=row["Watch time"],
+                    subscribers= row["Subscribers"],
+                    impressions=row["Impressions"],
+                    impression_ctr=row["Impressions click-through rate"],
+                    #likes=int(row["likes_24h"])
                 )
                 self.metrics.append(metric)            
         
-    def get_top_viewed(self, n=5):
-        return sorted(self.metrics, key=lambda m: m.views_24h, reverse=True)[:n]
-    
+    def get_top_ranked(self, n=5):
+        top_viewed = sorted(self.metrics, key=lambda m: m.views, reverse=True)[:n]
+        top_ctr = sorted(self.metrics, key=lambda m: m.impression_ctr, reverse=True)[:n]
+        top_impression = sorted(self.metrics, key=lambda m: m.impressions, reverse=True)[:n]
+        top_watch_time =sorted(self.metrics, key=lambda m: m.watch_time, reverse=True)[:n]
+
+        for i in range(len(top_viewed) - 1):
+            if top_viewed[i].title == top_viewed[i+1].title:
+                print(i) 
+
+
+   
 
