@@ -9,4 +9,5 @@ __pycache__/
 .vscode/
 
 # Ignore CSV files
+data/
 *.csv
